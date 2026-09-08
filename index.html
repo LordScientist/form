@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main class="main-container">
+        <aside class="image">
+            <img src="creed.JPG" alt="assassin creed">
+            <div class="logo-box">
+                <img src="logo.png" alt="ODIN LOGO" class="logo">
+                <span>CodeVeda</span>
+            </div>
+        </aside>
+
+        <div class="user-input">
+            <div class="message">
+                <p>This is not a real online service. But the call of Valhalla is real, and it's calling you. Walk in Eivor's footsteps, raid distant shores, and forge a legacy worthy of the gods. Nothing is true. Everything is permitted. Sign up now your saga begins the moment you do.
+                </p>
+                <p>You know you want to.</p>
+            </div>
+            <div class="start"><h3>Lets do this! Now is the time to join the Order!</h3></div>
+            <hr class="breaker">
+            <div class="form">
+
+                <form class="actual-form" id="signup-form" novalidate>
+
+                    <div class="user-form">
+
+                        <div>
+                            <label for="first-name">First Name</label>
+                            <input type="text" id="first-name" name="firstname" placeholder="Shay">
+                            <span class="error-message" id="first-name-error"></span>
+                        </div>
+
+                        <div>
+                            <label for="second-name">Second Name</label>
+                            <input type="text" id="second-name" name="secondname" placeholder="Cormac">
+                            <span class="error-message" id="second-name-error"></span>
+                        </div>
+
+                        <div>
+                            <label for="user-email">Email Address</label>
+                            <input type="email" id="user-email" name="email" placeholder="eg: shaypatrickcormac1@gmail.com">
+                            <span class="error-message" id="user-email-error"></span>
+                        </div>
+
+                        <div>
+                            <label for="number">Phone Number</label>
+                            <input type="tel" id="number" name="number" placeholder="eg: 0551234567">
+                            <span class="error-message" id="number-error"></span>
+                        </div>
+
+                        <div>
+                            <label for="password">Password</label>
+                            <input type="password" id="password" name="password"
+                            placeholder="enter a strong password">
+                            <span class="error-message" id="password-error"></span>
+                        </div>
+
+                        <div>
+                            <label for="confirm-password">Confirm Password</label>
+                            <input type="password" id="confirm-password" name="confirm-password" placeholder="confirm your password">
+                            <span class="error-message" id="confirm-password-error"></span>
+                        </div>
+                    </div>
+                    <hr class="breaker">
+                    <div class="user-account">
+                        <button type="submit">Create Account</button>
+                        <p id="form-success" class="success-message" hidden>Welcome to the Order! Your account has been created.</p>
+                        <p>Already have an account? <a href="https://github.com/lordscientist">Log in</a></p>
+                    </div>
+                </form>
+            </div>
+
+
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
